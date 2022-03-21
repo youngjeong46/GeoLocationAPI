@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: geolocationapi
+  name: team-carmen
   labels:
-    name: geolocationapi
+    name: team-carmen
 --- 
 apiVersion: v1
 kind: Service
@@ -11,7 +11,7 @@ metadata:
   labels: 
     app: geolocationapi
   name: geolocationapi
-  namespace: geolocationapi
+  namespace: team-carmen
 spec: 
   ports: 
     - 
@@ -28,7 +28,7 @@ metadata:
   labels: 
     app: geolocationapi
   name: geolocationapi
-  namespace: geolocationapi
+  namespace: team-carmen
 spec: 
   replicas: 2
   selector: 
